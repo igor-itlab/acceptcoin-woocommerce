@@ -1,0 +1,7 @@
+{
+  "autoload": {
+    "psr-4": {
+      "Acceptcoin_Cryptocurrency_Payment_Gateway_for_WooCommerce\\": ""
+    }
+  }
+}
