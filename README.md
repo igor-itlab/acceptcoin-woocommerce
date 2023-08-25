@@ -1,1 +1,0 @@
-# acceptcoin-woocommerce
