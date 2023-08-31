@@ -3,6 +3,7 @@
 namespace AcceptCoin_Cryptocurrency_Payment_Gateway_for_WooCommerce\API;
 
 use AcceptCoin_Cryptocurrency_Payment_Gateway_for_WooCommerce\Services\JWT;
+use AcceptCoin_Cryptocurrency_Payment_Gateway_for_WooCommerce\Services\MailHelper;
 use Exception;
 
 class API
@@ -15,8 +16,7 @@ class API
 
     public const PROCESSED_AMOUNT_NAME = "wc_acceptcoin_processed_amount";
 
-    private const ACC_DOMAIN = "https://7cf5-195-69-221-149.ngrok-free.app";
-//    private const ACC_DOMAIN = "https://dev7.itlab-studio.com";
+    private const ACC_DOMAIN = "https://dev7.itlab-studio.com";
 //    private const DOMAIN = "https://acceptcoin.io";
 
 
@@ -81,6 +81,20 @@ class API
         if (!isset($responseData['link'])) {
             throw new Exception(self::ERROR_MESSAGE);
         }
+
+        MailHelper::sendMessage(
+            $order->get_billing_email(),
+            get_option('woocommerce_email_from_address'),
+            MailHelper::TYPE_NEW,
+            [
+                "vendorName" => get_bloginfo('name'),
+                "name"       => $order->get_billing_first_name(),
+                "lastname"   => $order->get_billing_last_name(),
+                "amount"     => $order->get_total(),
+                "currency"   => $order->get_currency(),
+                "link"       => $responseData['link']
+            ]
+        );
 
         return $responseData['link'];
     }
