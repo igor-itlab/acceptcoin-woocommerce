@@ -16,8 +16,7 @@ class API
 
     public const PROCESSED_AMOUNT_NAME = "wc_acceptcoin_processed_amount";
 
-    private const ACC_DOMAIN = "https://dev7.itlab-studio.com";
-//    private const DOMAIN = "https://acceptcoin.io";
+    private const ACC_DOMAIN = "https://acceptcoin.io";
 
 
     /**

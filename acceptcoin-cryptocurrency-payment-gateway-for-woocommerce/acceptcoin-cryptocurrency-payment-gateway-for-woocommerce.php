@@ -8,7 +8,7 @@
  * @wordpress-plugin
  * Plugin Name:       Acceptcoin
  * Plugin URI:        https://acceptcoin.io
- * Description:       Acceptcoin is an innovative integrated payment gateway for accepting cryptocurrencies as payment for the purchase of goods and services on the seller's website. Powered by IT Lab Studio.
+ * Description:       Acceptcoin is an innovative integrated payment gateway for accepting cryptocurrencies as payment for the purchase of goods and services on the seller's website. Powered by Softile Limited.
  * Version:           1.0.0
  * Author:            Softile Limited
  * License:           GPL-2.0+

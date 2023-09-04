@@ -10,7 +10,7 @@ Requires PHP: 7.4
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
-AcceptCoin is an innovative integrated payment gateway for accepting cryptocurrencies as payment for the purchase of goods and services on the seller's website. Powered by IT Lab Studio.
+AcceptCoin is an innovative integrated payment gateway for accepting cryptocurrencies as payment for the purchase of goods and services on the seller's website. Powered by Softile Limited.
 == Description ==
 
 Bitcoin, Litecoin, Ripple, Tether and other cryptocurrencies are becoming more and more popular

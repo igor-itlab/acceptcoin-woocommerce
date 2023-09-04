@@ -101,6 +101,7 @@ class AcceptCoinPaymentGatewayWebhook
             );
         }
 
+
         if ($order->get_status() === self::RESOLUTION_STATUSES['PROCESSED']) {
             update_post_meta(
                 $order->get_id(),
@@ -108,7 +109,8 @@ class AcceptCoinPaymentGatewayWebhook
                 ACUtils::getProcessedAmount($response['data'])
             );
         }
-
+        echo var_export(123, true);
+die();
         update_option('webhook_debug', $_POST);
     }
 
