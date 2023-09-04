@@ -149,18 +149,18 @@ class MailHelper
                         <div
                             style="table-layout:fixed;margin:0;padding:35px 15px;background:#fff;font-size:13px;color:#333333;line-height:1.5;">
                             <p style="margin:0 0 10px">
-                                Hello '. $emailContent['name'] .' ' . $emailContent['lastname'] . '
+                                Hello ' . $emailContent['name'] . ' ' . $emailContent['lastname'] . '
                             </p>
                             <p>
-                                Want to complete your payment for '. $emailContent['amount'] .' '. $emailContent['currency'] .'?
+                                Want to complete your payment for ' . $emailContent['amount'] . ' ' . $emailContent['currency'] . '?
                             </p>
                             <p>
-                                To finish up, go back to payment page or use the button below.
+                                To finish up, go back to ' . $emailContent['vendorName'] . ' payment page or use the button below.
                             </p>
                 
                             <p style="width:fit-content;margin:0 auto 10px;padding:20px">
                                 <a style="text-decoration:none;background-color:#016E3B;width:fit-content;border-radius:5px;padding:17px 80px;color:#fff"
-                                   href="'. $emailContent['link'] .'" target="_blank">
+                                   href="' . $emailContent['link'] . '" target="_blank">
                                     Pay
                                 </a>
                             </p>
